@@ -79,10 +79,15 @@
       <!-- Map -->
       <div id="map" class="w-full h-full absolute inset-0 z-10"></div>
 
+      <!-- Toggle Controls Button -->
+      <button id="toggleControlsBtn" onclick="toggleMapControls()" title="Tampilkan Menu" class="absolute top-3 left-3 z-40 w-9 h-9 flex items-center justify-center rounded-lg bg-hutan/90 text-padi border border-padi/30 backdrop-blur-md shadow-xl hover:bg-padi hover:text-hutan transition-all duration-300">
+        <svg class="w-5 h-5 pointer-events-none" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h8m-8 6h16" /></svg>
+      </button>
+
       <!-- Control Panel -->
       <div id="mapControls"
-        class="absolute top-3 left-3 z-30 rounded-lg p-3 w-[200px] max-h-[calc(100%-1.5rem)] overflow-y-auto space-y-3 shadow-xl
-               bg-hutan/70 backdrop-blur-md border border-padi/25">
+        class="absolute top-14 left-3 z-30 rounded-lg p-3 w-[200px] max-h-[calc(100%-4.5rem)] overflow-y-auto space-y-3 shadow-xl
+               bg-hutan/70 backdrop-blur-md border border-padi/25 transition-all duration-300 transform -translate-x-[150%] opacity-0 pointer-events-none origin-left">
 
         <!-- Pencarian -->
         <div>
@@ -144,22 +149,22 @@
 
             <label class="flex items-center space-x-2 text-xs text-kertas/90 cursor-pointer select-none py-0.5 hover:bg-kertas/5 px-1 rounded">
               <input type="checkbox" value="hutan" class="layer-checkbox rounded border-padi text-hutan focus:ring-padi" checked>
-              <span>Kawasan Hutan</span>
+              <span>Kawasan Hutan (~1.089,62 Ha)</span>
             </label>
 
             <label class="flex items-center space-x-2 text-xs text-kertas/90 cursor-pointer select-none py-0.5 hover:bg-kertas/5 px-1 rounded">
               <input type="checkbox" value="sawah" class="layer-checkbox rounded border-padi text-hutan focus:ring-padi" checked>
-              <span>Kawasan Sawah</span>
+              <span>Kawasan Sawah (~396,78 Ha)</span>
             </label>
 
             <label class="flex items-center space-x-2 text-xs text-kertas/90 cursor-pointer select-none py-0.5 hover:bg-kertas/5 px-1 rounded">
               <input type="checkbox" value="pemukiman" class="layer-checkbox rounded border-padi text-hutan focus:ring-padi" checked>
-              <span>Kawasan Pemukiman</span>
+              <span>Kawasan Pemukiman (~51,62 Ha)</span>
             </label>
 
             <label class="flex items-center space-x-2 text-xs text-kertas/90 cursor-pointer select-none py-0.5 hover:bg-kertas/5 px-1 rounded">
               <input type="checkbox" value="karst" class="layer-checkbox rounded border-padi text-hutan focus:ring-padi" checked>
-              <span>Kawasan Karst</span>
+              <span>Kawasan Karst (~623,85 Ha)</span>
             </label>
 
           </div>
@@ -441,9 +446,11 @@
             fillOpacity: 0.2
           },
         onEachFeature: function (feature, layer) {
+          let popupContent = "<div class='text-xs font-semibold mb-1'>Kawasan Karst</div><div class='text-[10px]'>Luas Total: ~623,85 Hektar</div>";
           if (feature.properties && feature.properties.nama) {
-            layer.bindPopup("<div class='text-xs font-semibold'>Wilayah: " + feature.properties.nama + "</div>");
+            popupContent += "<div class='text-[10px] mt-1'>Keterangan: " + feature.properties.nama + "</div>";
           }
+          layer.bindPopup(popupContent);
         }
       }).addTo(map);
       map.fitBounds(karstLayer.getBounds());
@@ -485,9 +492,11 @@
             fillOpacity: 0.5
           },
         onEachFeature: function (feature, layer) {
+          let popupContent = "<div class='text-xs font-semibold mb-1'>Kawasan Sawah</div><div class='text-[10px]'>Luas Total: ~396,78 Hektar</div>";
           if (feature.properties && feature.properties.nama) {
-            layer.bindPopup("<div class='text-xs font-semibold'>Wilayah: " + feature.properties.nama + "</div>");
+            popupContent += "<div class='text-[10px] mt-1'>Keterangan: " + feature.properties.nama + "</div>";
           }
+          layer.bindPopup(popupContent);
         }
       }).addTo(map);
       map.fitBounds(sawahLayer.getBounds());
@@ -507,9 +516,11 @@
             fillOpacity: 0.3
           },
         onEachFeature: function (feature, layer) {
+          let popupContent = "<div class='text-xs font-semibold mb-1'>Kawasan Pemukiman</div><div class='text-[10px]'>Luas Total: ~51,62 Hektar</div>";
           if (feature.properties && feature.properties.nama) {
-            layer.bindPopup("<div class='text-xs font-semibold'>Wilayah: " + feature.properties.nama + "</div>");
+            popupContent += "<div class='text-[10px] mt-1'>Keterangan: " + feature.properties.nama + "</div>";
           }
+          layer.bindPopup(popupContent);
         }
       }).addTo(map);
       map.fitBounds(pemukimanLayer.getBounds());
@@ -529,9 +540,11 @@
             fillOpacity: 0.2
           },
         onEachFeature: function (feature, layer) {
+          let popupContent = "<div class='text-xs font-semibold mb-1'>Kawasan Hutan</div><div class='text-[10px]'>Luas Total: ~1.089,62 Hektar</div>";
           if (feature.properties && feature.properties.nama) {
-            layer.bindPopup("<div class='text-xs font-semibold'>Wilayah: " + feature.properties.nama + "</div>");
+            popupContent += "<div class='text-[10px] mt-1'>Keterangan: " + feature.properties.nama + "</div>";
           }
+          layer.bindPopup(popupContent);
         }
       }).addTo(map);
       map.fitBounds(hutanLayer.getBounds());
@@ -550,9 +563,11 @@
             fillOpacity: 0
           },
         onEachFeature: function (feature, layer) {
+          let popupContent = "<div class='text-xs font-semibold mb-1'>Batas Wilayah Desa Panaikang</div><div class='text-[10px]'>Luas Total: ~1.130,59 Hektar</div>";
           if (feature.properties && feature.properties.nama) {
-            layer.bindPopup("<div class='text-xs font-semibold'>Wilayah: " + feature.properties.nama + "</div>");
+            popupContent += "<div class='text-[10px] mt-1'>Keterangan: " + feature.properties.nama + "</div>";
           } 
+          layer.bindPopup(popupContent);
         }
       }).addTo(map);
       map.fitBounds(wilayahLayer.getBounds());
@@ -781,7 +796,69 @@
       });
     }
 
+    // Auto Hide Swiper Panel Logic
+    const mapControlsPanel = document.getElementById('mapControls');
+    const toggleBtn = document.getElementById('toggleControlsBtn');
+    let autoHideTimeout;
+    let isPanelOpen = false;
 
+    function openMapControls() {
+      isPanelOpen = true;
+      mapControlsPanel.classList.remove('-translate-x-[150%]', 'opacity-0', 'pointer-events-none');
+      mapControlsPanel.classList.add('translate-x-0', 'opacity-100', 'pointer-events-auto');
+      toggleBtn.classList.add('bg-padi', 'text-hutan');
+      toggleBtn.classList.remove('bg-hutan/90', 'text-padi');
+    }
+
+    function closeMapControls() {
+      isPanelOpen = false;
+      mapControlsPanel.classList.add('-translate-x-[150%]', 'opacity-0', 'pointer-events-none');
+      mapControlsPanel.classList.remove('translate-x-0', 'opacity-100', 'pointer-events-auto');
+      toggleBtn.classList.remove('bg-padi', 'text-hutan');
+      toggleBtn.classList.add('bg-hutan/90', 'text-padi');
+    }
+
+    function toggleMapControls() {
+      if (isPanelOpen) {
+        closeMapControls();
+      } else {
+        openMapControls();
+        startAutoHide();
+      }
+    }
+
+    function startAutoHide() {
+      clearTimeout(autoHideTimeout);
+      autoHideTimeout = setTimeout(() => {
+        if (isPanelOpen) {
+          closeMapControls();
+        }
+      }, 4000); // 4 detik
+    }
+
+    // Hover events for Desktop
+    toggleBtn.addEventListener('mouseenter', () => {
+      clearTimeout(autoHideTimeout);
+      openMapControls();
+    });
+
+    toggleBtn.addEventListener('mouseleave', () => {
+      startAutoHide();
+    });
+
+    mapControlsPanel.addEventListener('mouseenter', () => {
+      clearTimeout(autoHideTimeout);
+    });
+
+    mapControlsPanel.addEventListener('mouseleave', () => {
+      startAutoHide();
+    });
+    
+    // Automatically open on start so user knows it's there, then hide
+    setTimeout(() => {
+      openMapControls();
+      startAutoHide();
+    }, 500);
   </script>
 </body>
 </html>
