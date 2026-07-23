@@ -1,0 +1,214 @@
+{
+    "type": "FeatureCollection",
+    "features": [
+        {
+            "type": "Feature",
+            "geometry": {
+            "type": "Point",
+            "coordinates": [119.608854, -4.877820]
+            },
+            "properties": {
+            "nama": "Kantor Desa Panaikang",
+            "fungsi": "Gedung Pemerintahan"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+            "type": "Point",
+            "coordinates": [119.608817, -4.877879]
+            },
+            "properties": {
+            "nama": "Perpustakaan Macca",
+            "fungsi": "Fasilitas Umum"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+            "type": "Point",
+            "coordinates": [119.6086258801935, -4.877754939818033]
+            },
+            "properties": {
+            "nama": "Gedung Bulutangkis Desa Panaikang",
+            "fungsi": "Fasilitas Umum"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+            "type": "Point",
+            "coordinates": [119.60858605142083, -4.877923126600015]
+            },
+            "properties": {
+            "nama": "Pustu Desa Panaikang",
+            "fungsi": "Fasilitas Kesehatan"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [119.60437954753633, -4.875111118263451]
+            },
+            "properties": {
+            "nama": "Masjid Darul Falah",
+            "fungsi": "Masjid"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+            "type": "Point",
+            "coordinates": [119.609449, -4.877226]
+            },
+            "properties": {
+            "nama": "Masjid Nurul Qalbi",
+            "fungsi": "Masjid"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [119.60692346022724, -4.882444044858324]
+            },
+            "properties": {
+            "nama": "Masjid Tuarang",
+            "fungsi": "Masjid"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [119.60345852033306, -4.866272024863039]
+            },
+            "properties": {
+            "nama": "Masjid Nurul Huda",
+            "fungsi": "Masjid"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [119.60503167267325, -4.86562326532463]
+            },
+            "properties": {
+            "nama": "Masjid IR. Hj. Martati",
+            "fungsi": "Masjid"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [119.61191120452989, -4.868551153375963]
+            },
+            "properties": {
+            "nama": "Masjid Darul Istiqamah",
+            "fungsi": "Masjid"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [119.6212972843539, -4.870881640134987]
+            },
+            "properties": {
+            "nama": "Masjid Babussalam",
+            "fungsi": "Masjid"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [119.62390092320555, -4.872470453185174]
+            },
+            "properties": {
+            "nama": "Masjid Birrul Walidain",
+            "fungsi": "Masjid"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+            "type": "Point",
+            "coordinates": [119.6084126730204, -4.877730124908202]
+            },
+            "properties": {
+            "nama": "SDN 54 Tuarang",
+            "fungsi": "Sekolah Dasar"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [119.60560701205145, -4.87205059243466]
+            },
+            "properties": {
+            "nama": "TK Ar Rahman Panaikang",
+            "fungsi": "Taman Kanak-kanak"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [119.60746636646833, -4.869250658362938]
+            },
+            "properties": {
+            "nama": "SDN 30 Panaikang",
+            "fungsi": "Sekolah Dasar"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [119.61167281759134, -4.868778848522734]
+            },
+            "properties": {
+            "nama": "Pondok Pesantren MDIA Pangkep",
+            "fungsi": "Pondok Pesantren"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [119.61826700360986, -4.870241919618877]
+            },
+            "properties": {
+            "nama": "TK Al Furqan",
+            "fungsi": "Taman Kanak-kanak"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [119.62102995181664, -4.870854052146334]
+            },
+            "properties": {
+            "nama": "SDN 36 Biring Ere",
+            "fungsi": "Sekolah Dasar"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [119.63390576169398, -4.862520929899656]
+            },
+            "properties": {
+            "nama": "Wisata Leang Londrong",
+            "fungsi": "Tempat Wisata"
+            }
+        }
+    ]
+}
