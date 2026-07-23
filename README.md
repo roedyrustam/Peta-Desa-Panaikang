@@ -7,13 +7,13 @@ Aplikasi web Sistem Informasi Geografis (GIS) interaktif untuk Desa Panaikang, K
 - **Peta Interaktif**: Navigasi mulus dengan dukungan zoom, pan, kompas, skala, dan mini-map (menggunakan Leaflet.js).
 - **Multi-Basemap**: Berbagai pilihan peta dasar seperti Google Satellite, OpenStreetMap, Topographic, Dark/Light Mode, dan Carto Positron.
 - **Visualisasi GeoJSON Multi-Layer**: Mendukung dan merender data spasial format GeoJSON untuk berbagai kategori:
-  - 🏘️ Batas Wilayah Desa
+  - 🏘️ Batas Wilayah Desa (Total luas area: ~1.130,59 Hektar)
   - 🏥 Fasilitas Umum (Ibadah, Pendidikan, Kesehatan, Pemerintahan, Wisata)
   - 🛣️ Jaringan Jalan
   - 🌊 Aliran Sungai
   - 🌳 Kawasan Hutan
   - 🌾 Kawasan Sawah
-  - 🏡 Kawasan Pemukiman
+  - 🏡 Kawasan Pemukiman (Total luas area: ~51,62 Hektar)
   - ⛰️ Kawasan Karst
 - **Filter Layer Kustom**: Menu dropdown dengan checkbox untuk mengaktifkan atau menonaktifkan layer tertentu sesuai kebutuhan.
 - **Pencarian Cerdas (Smart Search)**: Cari lokasi atau fasilitas berdasarkan nama. Hasil pencarian akan disorot (highlight) secara visual di atas peta.
