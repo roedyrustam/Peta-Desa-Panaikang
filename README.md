@@ -11,10 +11,11 @@ Aplikasi web Sistem Informasi Geografis (GIS) interaktif untuk Desa Panaikang, K
   - 🏥 Fasilitas Umum (Ibadah, Pendidikan, Kesehatan, Pemerintahan, Wisata)
   - 🛣️ Jaringan Jalan
   - 🌊 Aliran Sungai
-  - 🌳 Kawasan Hutan
-  - 🌾 Kawasan Sawah
+  - 🌳 Kawasan Hutan (Total luas area: ~1.089,62 Hektar)
+  - 🌾 Kawasan Sawah (Total luas area: ~396,78 Hektar)
   - 🏡 Kawasan Pemukiman (Total luas area: ~51,62 Hektar)
-  - ⛰️ Kawasan Karst
+  - ⛰️ Kawasan Karst (Total luas area: ~623,85 Hektar)
+  - 🐟 Kawasan Tambak (Total luas area: ~57,99 Hektar)
 - **Filter Layer Kustom**: Menu dropdown dengan checkbox untuk mengaktifkan atau menonaktifkan layer tertentu sesuai kebutuhan.
 - **Pencarian Cerdas (Smart Search)**: Cari lokasi atau fasilitas berdasarkan nama. Hasil pencarian akan disorot (highlight) secara visual di atas peta.
 - **Ikon Dinamis & Kustom**: Penanda (marker) fasilitas otomatis menyesuaikan ikon dan warna berdasarkan fungsinya.

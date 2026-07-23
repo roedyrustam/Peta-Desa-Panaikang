@@ -77,7 +77,8 @@ const files = [
     'kawasanHutan.json',
     'pemukimanReal.json',
     'Tambak 2.json',
-    'desa panikang.json'
+    'desa panikang.json',
+    'kars.json'
 ];
 
 files.forEach(file => {
